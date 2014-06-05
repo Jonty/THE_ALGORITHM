@@ -4,12 +4,13 @@ import datetime
 
 def get_middle_thursday(year, month):
     startday, numdays = calendar.monthrange(year, month)
+    middle_of_month = numdays / 2
     middleday = 0
     distance = 30
 
     for day in range(1, numdays + 1):
         weekday = calendar.weekday(year, month, day)
-        day_distance = abs(15 - day)
+        day_distance = abs(middle_of_month - day)
         if weekday == 3 and day_distance < distance:
             middleday = day
             distance = day_distance

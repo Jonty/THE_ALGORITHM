@@ -25,8 +25,8 @@ def gen_ps_dates(start):
 
         start = datetime.date(year=start.year, month=start.month, day=1) + datetime.timedelta(days=31)
 
-
-start = datetime.date.today()
-generator = gen_ps_dates(start)
-for _ in range(0,10):
-    print generator.next()
+if __name__ == '__main__':
+    start = datetime.date.today()
+    generator = gen_ps_dates(start)
+    for _ in range(0,10):
+        print generator.next()

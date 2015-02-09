@@ -18,7 +18,7 @@ def gen_ps_dates(start=None):
 
     while True:
         day = calc_middle_thursday(start.year, start.month)
-        if day > start.day:
+        if day >= start.day:
             date = datetime.datetime(
                         year=start.year, 
                         month=start.month, 

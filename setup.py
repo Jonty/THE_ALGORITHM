@@ -7,5 +7,5 @@ setup(
     author_email='jonty@jonty.co.uk',
     url='https://github.com/jonty/the_algorithm',
     py_modules=['the_algorithm'],
-    install_requires=['python-dateutil==2.4.0'],
+    install_requires=['python-dateutil>=2.4.0'],
 )
